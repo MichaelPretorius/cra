@@ -17,7 +17,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Dev
         </a>
         <button onClick={signInWithGoogle}>
           Sign in with google
