@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { signInWithGoogle } from './firebase';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={signInWithGoogle}>
+          Sign in with google
+        </button>
       </header>
     </div>
   );
