@@ -1,7 +1,10 @@
 import React from 'react';
+import { ModalProvider } from 'styled-react-modal';
+// import styled from 'styled-components';
 import logo from './logo.svg';
 import './App.css';
 import { signInWithGoogle } from './firebase';
+import ModalButton from './ModalButton';
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
           Learn React
         </a>
         <button onClick={signInWithGoogle}>Sign in with google</button>
+        <ModalProvider>
+          <ModalButton />
+        </ModalProvider>
       </header>
     </div>
   );
