@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 import React, { useState } from 'react';
 import Modal from 'styled-react-modal';
 // import styled from 'styled-components';
