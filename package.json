@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "test-coverage": "npm run test -- --coverage --watchAll=false",
     "eject": "react-scripts eject",
-    "precommit": "pretty-quick --staged",
+    "precommit": "npm run lint && pretty-quick --staged",
     "deploy-dev": "npm run build && firebase use dev && firebase deploy",
     "deploy-prod": "mv .env temp.env && mv prod.env .env && npm run build && firebase use prod && firebase deploy && firebase use dev && mv .env prod.env && mv temp.env .env"
   },
